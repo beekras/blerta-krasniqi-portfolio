@@ -1,5 +1,11 @@
+
+
+
 * {
   box-sizing: border-box;
+}
+:root {
+  --pink: rgb(243, 123, 183);
 }
 
 body {
@@ -7,17 +13,244 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: lavender
 }
 
-h1,
-h2,
-h3,
+header {
+background-color: var(--pink);
+  padding: 15px; 
+}
+
+h1 {
+display:inline-block;
+background-color: white; 
+color: rgb(243, 123, 183);
+font-size: 35px;
+padding-left: 60px;
+margin: 0;
+}
+
+header nav {
+font-size: 110%;
+float: right;
+margin-top: 10px;
+padding: 0;
+}
+
+header nav ul {
+  display: inline;
+}
+
+header nav ul li {
+  display: inline;
+  list-style-type: none;
+  padding: 20px;
+}
+
+header a {
+display: inline-block;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-banner {
+
+  height: 400px;
+    width: 100%;
+    background-image: url("../images/img1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#blerta {
+
+height: 250px;
+border-radius: 50%;
+display: block;
+margin:auto;
+}
+
+h2 {
+font-family: "Lucida Console","Courier New";
+color: rgb(235, 54, 181);
+text-align: center;
+}
+
+h2 span {
+  background-color: antiquewhite;
+  padding: 10px;
+}
+
+h3 {
+font-size: 30px;
+color: var(--pink);
+margin: 0;
+display: inline-block;
+padding: 10px;
+text-align: right;
+}
+
+/*
+
+.vl1::before {
+  border-left: 3px solid var(--pink);
+  height: 200px;
+  left: 10%; 
+ }
+
+*/
+
+.page-section {
+  margin-left: 10%;
+  display: flex;
+  align-items: baseline;}
+
+h1
+h2
+h3
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 0; 
 }
 
 p {
   margin: 0;
+  padding: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  align-items: baseline;
 }
+
+#work {
+
+  display: flex;
+}
+
+#gridContainer {
+margin: 0 5px;
+display: grid;
+grid-template-rows: 1fr 1fr 1fr; 
+grid-template-columns: 1fr 1fr;
+grid-template-areas:
+"horiseon horiseon"
+"LED calculator"
+"recipes games"
+} 
+
+
+.gridArea {
+display: grid;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+} 
+
+.horiseonImg {
+
+grid-area: horiseon;
+display: inline-flex;
+max-width: 100%;
+max-height: 100%;
+object-fit: cover;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-start: 2;
+}
+
+.ledImg {
+
+grid-area: LED;
+max-width: 100%;
+max-height: 100%;
+object-fit: cover;
+grid-column-start: 2;
+grid-column-end: 3;
+
+}
+
+.calcImg
+{
+    grid-area: calculator;
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+    grid-column-start: 2;
+      grid-column-end: 3;
+}
+
+.recipeImg {
+
+    grid-area: recipes;
+max-width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+}
+.gameImg {
+    grid-area: games;
+max-width: 100%;
+max-height: 100%;
+object-fit: cover;
+   
+} 
+
+.heading {
+
+  font-size: 20px;
+  font-family:'Courier New', Courier, monospace
+}
+
+
+.page-section-contact {
+
+  display: block;
+  margin-left: 50px;
+}
+
+#contact {
+
+  display: inline;
+
+}
+
+
+.page-section-contact ul {
+
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.page-section-contact ul li {
+
+  display: inline-block;
+  padding: 50px;
+  text-align: center;
+
+}
+
+.page-section-contact a {
+  display: inline-block;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+    font-weight: bold;
+    color: var(--pink);
+   } 
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: antiquewhite;
+  }}
+
