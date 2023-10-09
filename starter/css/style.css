@@ -114,7 +114,9 @@ h6 {
 }
 
 p {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  /* margin: 0; */
   padding: 20px;
   text-align: justify;
   text-justify: inter-word;
@@ -124,16 +126,16 @@ p {
 #work {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: flex-start; 
   margin-top: 50px;
 }
 
 #gridContainer {
   display: grid;
-  grid-gap: 20px;
+  margin-left: 40px;
+  grid-gap: 30px;
   grid-template-rows: 500px 200px 200px;
   grid-template-columns: 500px 500px;
-  height: fit-content;
   grid-template-areas:
     "horiseon horiseon"
     "LED calculator"
@@ -146,14 +148,19 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  border: 5px;
-  
 
+}
+
+.gridArea:hover {
+
+  opacity: 0.5;
+  
 }
 
 #horiseon {
   grid-area: horiseon;
-  background-image: url("../images/horiseon.jpg")
+  background-image: url("../images/horiseon.jpg");
+  border-style: solid;
 }
 
 
@@ -161,12 +168,14 @@ p {
 
   grid-area: LED;
   background-image: url("../images/LED.jpg");
+  border-style: solid;
 
 }
 
 #calculator {
   grid-area: calculator;
   background-image: url("../images/calculator.jpg");
+  border-style: solid;
 
 }
 
@@ -174,22 +183,33 @@ p {
 
   grid-area: recipes;
   background-image: url("../images/recipeimg.jpg");
+  border-style: solid;
 }
 
-#game {
+#games {
   grid-area: games;
   background-image: url("../images/gaming-website.jpg");
+  border-style: solid;
 }
 
 .heading {
 
   font-size: 20px;
   font-family:'Courier New', Courier, monospace;
-  position: absolute;
-  
-  background-color: var(--pink);
+ position: absolute;
+  background-color: var(--pink); 
+  border-style: solid;
+  border-color:black
+
 }
 
+.gridArea a {
+
+  display: flex;
+  align-items: end;
+  padding-bottom: 20px;
+
+}
 
 .page-section-contact {
 
@@ -199,10 +219,9 @@ p {
 
 #contact {
 
-  display: inline;
-
+  display: flex;
+  flex-direction: row;
 }
-
 
 .page-section-contact ul {
 
