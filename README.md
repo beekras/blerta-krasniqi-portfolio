@@ -20,6 +20,8 @@ I created a portfolio page to showcase my skills and information about me, using
 
 ## Deployed website
 
+https://beekras.github.io/blerta-krasniqi-portfolio/
+
 
 ## License
 
